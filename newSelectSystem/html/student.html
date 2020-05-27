@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js">
+  </script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="../css/student.css" />
+  <script src="../js/mock.js"></script>
+  <script src="../js/mockData.js"></script>
+  <script src="../js/echarts.js"></script>
+  <script></script>
+
+</head>
+
+
+<body>
+  <div id="app">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">学生选课系统</a>
+        </div>
+        <ul class="navUl nav navbar-nav navbar-right">
+          <li><a href="../index.html"><span class="glyphicon glyphicon-new-window"></span> 退出</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 内容 -->
+    <div id="con" class="container">
+      <div class="col-xs-2">
+        <ul id="navUl" class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+          <li role="presentation">
+            <a href="#tab2" aria-controls="inbox" role="tab" data-toggle="tab">进入选课</a>
+          </li>
+          <li role="presentation">
+            <a href="#tab4" aria-controls="inbox1" role="tab" data-toggle="tab">统计选课情况</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <!-- 右边内容 -->
+      <div id=showCon class="showCon tab-content vertical-tab-content col-md-10">
+
+        <!--进入选课-->
+        <div role="tabpanel" class="tab-pane fade in active" id="tab2">
+
+          <!--第一块-->
+          <div id="rect1" class="rect">
+            <div id="message">
+              <p><span class="glyphicon glyphicon-chevron-right"></span> 请在限制的30分钟内完成选课</p>
+              <p><span class="glyphicon glyphicon-chevron-right"></span> 可先查看选课统计情况作为参考,进行选课</p>
+            </div>
+            <button type="button" id="start" class="btn btn-success btn-lg">进入选课</button>
+          </div>
+
+          <!--第二块6-->
+          <div id="rect2" class="rect">
+            <div id="tip">
+              <span>请在限定的时间内完成选课</span>
+              <span class="glyphicon glyphicon-time"></span><span id="countdown">30:00</span>
+            </div>
+            <div id="selectGroup" class="form-group">
+              <span style="font-weight: bold">固定科目：数学/语文/英语</span><br />
+              <hr>
+              <label for="disabledTextInput" class="control-label">
+                <select class="form-control " style="width:120px;">
+                  <option value="物理">物理</option>
+                  <option value="历史">历史</option>
+                </select>
+                <select id="changeSel" class="form-control " style="width:120px;">
+                  <option value="生物">生物</option>
+                  <option value="地理">地理</option>
+                  <option value="政治">政治</option>
+                  <option value="化学">化学</option>
+                </select>
+                <select id="insertOpiton" class="form-control " style="width:120px;">
+                  <option value="地理">地理</option>
+                  <option value="政治">政治</option>
+                  <option value="化学">化学</option>
+                </select>
+
+            </div>
+            <button id="confirm" class="btn btn-success btn-lg" type="button">确认选课</button>
+          </div>
+
+          <!--第三块-->
+          <div id="rect3" class="rect">
+            <p>你已选择<span id="result"></span></p>
+            <p><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;&nbsp;如需修改选课,请联系老师</p>
+          </div>
+        </div>
+
+        <!-- tab4 统计情况-->
+        <div role="tabpanel" class="tab-pane fade" id="tab4">
+          <div id="chartbtn" class="form-group">
+            <button id="subChart" class="btn btn-primary" type="button">单科图表</button>
+            <button id="arrChart" class="btn btn-primary" type="button">组合图表</button>
+          </div>
+          <div id="chartShow" style="width: 1000px;height:400px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/student.js"></script>
+</body>
+
+</html>
