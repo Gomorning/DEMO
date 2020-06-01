@@ -1,0 +1,42 @@
+[
+  {
+    "coUserEntity": [
+      {
+        "createBy": "e2445e3e726846028fa08ee5f7f3e538",
+        "name": "张三",
+        "avatar": "https://dn-coding-net-production-static.codehub.cn/static/fruit_avatar/Fruit-11.png"
+      },
+      {
+        "createBy": "e2445e3e726846028fa08ee5f7f3e538",
+        "name": "李四",
+        "avatar": "https://dn-coding-net-production-static.codehub.cn/static/fruit_avatar/Fruit-11.png"
+      }
+    ],
+    "coTaskEntityList": [
+      {
+        "name": "完成A项目",
+        "startTime": "2019-07-11 17:04:30",
+        "endTime": "2019-07-15 18:00:00",
+        "ownerName": "张三"
+      },
+      {
+        "name": "完成B项目",
+        "startTime": "2019-07-22 10:00:00",
+        "endTime": "2019-07-26 18:00:00",
+        "ownerName": "张三"
+      },
+      {
+        "name": "配合张三完成A项目",
+        "startTime": "2019-07-12 10:00:00",
+        "endTime": "2019-07-16 18:00:00",
+        "ownerName": "李四"
+      },
+      {
+        "name": "配合张三完成B项目",
+        "startTime": "2019-07-23 10:00:00",
+        "endTime": "2019-07-30 18:00:00",
+        "ownerName": "李四"
+      }
+    ]
+  }
+]
